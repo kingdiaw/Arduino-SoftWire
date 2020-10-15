@@ -45,6 +45,8 @@ void loop() {
   Serial.print("P0:");
   Serial.println(ioRead(P0));
 }
+
+//e.g: ioWrite(P1,HIGH);
 void ioWrite(byte pin, byte state){
   byte maskPin = 0;
   if(state == HIGH){
